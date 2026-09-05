@@ -7,10 +7,7 @@ function Movies() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/movies")
-      /*.then((response) => {
-        setMovies(response.data);
-      })*/
+      .get("https://movie-ticket-booking-4469.onrender.com/api/movies")
       .then((response) => {
          console.log("Movies received:", response.data);
            setMovies(response.data);
