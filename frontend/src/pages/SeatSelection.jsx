@@ -40,8 +40,7 @@ function SeatSelection() {
     }
 
     try {
-      const response = await axios.post(
-        "http://localhost:5000/api/bookings",
+      const response = await axios.post("https://movie-ticket-booking-4469.onrender.com/api/bookings", 
         {
           movie: id,
           seats: selectedSeats,
