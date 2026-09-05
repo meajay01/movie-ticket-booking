@@ -10,8 +10,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+      const response = await axios.post("https://movie-ticket-booking-4469.onrender.com/api/auth/register", 
         {
           name,
           email,
